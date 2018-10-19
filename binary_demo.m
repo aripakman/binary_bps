@@ -4,6 +4,12 @@
 % 1) Exact Hamiltonian Monte Carlo (HMC) for binary distributions
 % 2) Binary Bouncy Particle Sampler (BPS)
 
+% Based on the papers
+% 1) "Auxiliary-variable exact Hamiltonian Monte Carlo samplers for binary
+% distributions" by Ari Pakman and Liam Paninski
+% 2) "Binary Bouncy Particle Sampler" by Ari Pakman 
+
+
 % We use C++ implementations for Markov Random Fields (MRFs)
 % In HMC we use the Gaussian augmentation and in BPS both Gaussian and
 % Exponental augmentations
@@ -140,7 +146,7 @@ cpu_time_bouncyG = toc
 
 
 % histogram of travel times for the bouncy samplers
-figure(99)
+figure(100)
 hist(timesE, 160)
 
 
